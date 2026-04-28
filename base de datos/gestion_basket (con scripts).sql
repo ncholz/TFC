@@ -1,0 +1,322 @@
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+-- Limpiamos si ya existe algo para que no pete
+DROP VIEW IF EXISTS `vista_clasificacion`;
+DROP TABLE IF EXISTS `stats_partidos`;
+DROP TABLE IF EXISTS `stats_historicas`;
+DROP TABLE IF EXISTS `usuarios`;
+DROP TABLE IF EXISTS `jugadores`;
+DROP TABLE IF EXISTS `partidos`;
+DROP TABLE IF EXISTS `equipos`;
+DROP TABLE IF EXISTS `entrenamientos`;
+
+-- --------------------------------------------------------
+
+CREATE TABLE `entrenamientos` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nombre` varchar(100) DEFAULT NULL,
+  `tipo` varchar(50) DEFAULT NULL,
+  `descripcion` text DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+INSERT INTO `entrenamientos` (`id`, `nombre`, `tipo`, `descripcion`) VALUES
+(1, 'Shooting Spree', 'MEJORA_TRIPLES', 'Lanzamiento de 3 puntos en movimiento tras bloqueo.'),
+(2, 'Post Moves', 'MEJORA_POSTE', 'Movimientos de pies en la pintura para pivots.'),
+(3, 'Pick & Roll Defense', 'TACTICA_DEFENSA', 'Defensa del bloqueo directo (Switch, Drop, Hedge).'),
+(4, 'Free Throw Pressure', 'MEJORA_TIRO', 'Tiros libres con ruido simulado y fatiga.'),
+(5, 'Fast Break Drills', 'TRANSICION', 'Ejercicios de contraataque 3vs2 y 2vs1.');
+
+-- --------------------------------------------------------
+
+CREATE TABLE `equipos` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nombre` varchar(50) NOT NULL,
+  `ciudad` varchar(50) DEFAULT NULL,
+  `logo_url` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+INSERT INTO `equipos` (`id`, `nombre`, `ciudad`, `logo_url`) VALUES
+(1, 'Los Angeles Lakers', 'Los Angeles', 'lakers_logo.png'),
+(2, 'Golden State Warriors', 'San Francisco', 'warriors_logo.png'),
+(3, 'Boston Celtics', 'Boston', 'celtics_logo.png'),
+(4, 'Milwaukee Bucks', 'Milwaukee', 'bucks_logo.png'),
+(5, 'Denver Nuggets', 'Denver', 'nuggets_logo.png'),
+(6, 'Miami Heat', 'Miami', 'heat_logo.png'),
+(7, 'Dallas Mavericks', 'Dallas', 'mavs_logo.png'),
+(8, 'Phoenix Suns', 'Phoenix', 'suns_logo.png');
+
+-- --------------------------------------------------------
+
+CREATE TABLE `jugadores` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nombre` varchar(100) NOT NULL,
+  `posicion` varchar(20) DEFAULT NULL,
+  `altura_cm` int(11) DEFAULT NULL,
+  `dorsal` int(11) DEFAULT NULL,
+  `id_equipo` int(11) DEFAULT NULL,
+  `foto_url` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `id_equipo` (`id_equipo`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+INSERT INTO `jugadores` (`id`, `nombre`, `posicion`, `altura_cm`, `dorsal`, `id_equipo`, `foto_url`) VALUES
+(1, 'LeBron James', 'Alero', 206, 23, 1, NULL),
+(2, 'Anthony Davis', 'Pivot', 208, 3, 1, NULL),
+(3, 'Dlo Russell', 'Base', 193, 1, 1, NULL),
+(4, 'Austin Reaves', 'Escolta', 196, 15, 1, NULL),
+(5, 'Rui Hachimura', 'Ala-Pivot', 203, 28, 1, NULL),
+(6, 'Jarred Vanderbilt', 'Ala-Pivot', 203, 2, 1, NULL),
+(7, 'Gabe Vincent', 'Base', 188, 7, 1, NULL),
+(8, 'Jaxson Hayes', 'Pivot', 213, 11, 1, NULL),
+(9, 'Cam Reddish', 'Alero', 201, 5, 1, NULL),
+(10, 'Christian Wood', 'Ala-Pivot', 206, 35, 1, NULL),
+(11, 'Stephen Curry', 'Base', 188, 30, 2, NULL),
+(12, 'Draymond Green', 'Ala-Pivot', 198, 23, 2, NULL),
+(13, 'Andrew Wiggins', 'Alero', 201, 22, 2, NULL),
+(14, 'Jonathan Kuminga', 'Ala-Pivot', 201, 0, 2, NULL),
+(15, 'Buddy Hield', 'Escolta', 193, 7, 2, NULL),
+(16, 'Kevon Looney', 'Pivot', 206, 5, 2, NULL),
+(17, 'Gary Payton II', 'Escolta', 188, 8, 2, NULL),
+(18, 'Brandin Podziemski', 'Escolta', 193, 2, 2, NULL),
+(19, 'Trayce Jackson', 'Ala-Pivot', 206, 32, 2, NULL),
+(20, 'Kyle Anderson', 'Alero', 206, 1, 2, NULL),
+(21, 'Jayson Tatum', 'Alero', 203, 0, 3, NULL),
+(22, 'Jaylen Brown', 'Escolta', 198, 7, 3, NULL),
+(23, 'Jrue Holiday', 'Base', 191, 4, 3, NULL),
+(24, 'Derrick White', 'Base', 193, 9, 3, NULL),
+(25, 'Kristaps Porzingis', 'Pivot', 221, 8, 3, NULL),
+(26, 'Al Horford', 'Pivot', 206, 42, 3, NULL),
+(27, 'Payton Pritchard', 'Base', 185, 11, 3, NULL),
+(28, 'Sam Hauser', 'Alero', 201, 30, 3, NULL),
+(29, 'Luke Kornet', 'Pivot', 218, 40, 3, NULL),
+(30, 'Xavier Tillman', 'Ala-Pivot', 203, 26, 3, NULL),
+(31, 'Giannis Antetokounmpo', 'Ala-Pivot', 211, 34, 4, NULL),
+(32, 'Damian Lillard', 'Base', 188, 0, 4, NULL),
+(33, 'Khris Middleton', 'Alero', 201, 22, 4, NULL),
+(34, 'Brook Lopez', 'Pivot', 216, 11, 4, NULL),
+(35, 'Bobby Portis', 'Ala-Pivot', 208, 9, 4, NULL),
+(36, 'Gary Trent Jr', 'Escolta', 196, 5, 4, NULL),
+(37, 'Pat Connaughton', 'Escolta', 196, 24, 4, NULL),
+(38, 'Taurean Prince', 'Alero', 201, 12, 4, NULL),
+(39, 'Delon Wright', 'Base', 196, 55, 4, NULL),
+(40, 'MarJon Beauchamp', 'Alero', 201, 3, 4, NULL),
+(41, 'Nikola Jokic', 'Pivot', 211, 15, 5, NULL),
+(42, 'Jamal Murray', 'Base', 193, 27, 5, NULL),
+(43, 'Aaron Gordon', 'Ala-Pivot', 203, 50, 5, NULL),
+(44, 'Michael Porter Jr', 'Alero', 208, 1, 5, NULL),
+(45, 'Christian Braun', 'Escolta', 198, 0, 5, NULL),
+(46, 'Russell Westbrook', 'Base', 191, 4, 5, NULL),
+(47, 'Peyton Watson', 'Alero', 203, 8, 5, NULL),
+(48, 'DeAndre Jordan', 'Pivot', 211, 6, 5, NULL),
+(49, 'Julian Strawther', 'Alero', 201, 3, 5, NULL),
+(50, 'Zeke Nnaji', 'Ala-Pivot', 206, 22, 5, NULL),
+(51, 'Jimmy Butler', 'Alero', 201, 22, 6, NULL),
+(52, 'Bam Adebayo', 'Pivot', 206, 13, 6, NULL),
+(53, 'Tyler Herro', 'Escolta', 196, 14, 6, NULL),
+(54, 'Terry Rozier', 'Base', 185, 2, 6, NULL),
+(55, 'Jaime Jaquez Jr', 'Alero', 198, 11, 6, NULL),
+(56, 'Duncan Robinson', 'Alero', 201, 55, 6, NULL),
+(57, 'Kevin Love', 'Ala-Pivot', 203, 42, 6, NULL),
+(58, 'Nikola Jovic', 'Ala-Pivot', 208, 5, 6, NULL),
+(59, 'Haywood Highsmith', 'Alero', 196, 24, 6, NULL),
+(60, 'Thomas Bryant', 'Pivot', 208, 31, 6, NULL),
+(61, 'Luka Doncic', 'Base', 201, 77, 7, NULL),
+(62, 'Kyrie Irving', 'Escolta', 188, 11, 7, NULL),
+(63, 'Klay Thompson', 'Escolta', 198, 31, 7, NULL),
+(64, 'PJ Washington', 'Ala-Pivot', 201, 25, 7, NULL),
+(65, 'Dereck Lively II', 'Pivot', 216, 2, 7, NULL),
+(66, 'Daniel Gafford', 'Pivot', 208, 21, 7, NULL),
+(67, 'Naji Marshall', 'Alero', 201, 13, 7, NULL),
+(68, 'Maxi Kleber', 'Ala-Pivot', 208, 42, 7, NULL),
+(69, 'Dante Exum', 'Base', 196, 0, 7, NULL),
+(70, 'Dwight Powell', 'Pivot', 208, 7, 7, NULL),
+(71, 'Kevin Durant', 'Alero', 211, 35, 8, NULL),
+(72, 'Devin Booker', 'Escolta', 196, 1, 8, NULL),
+(73, 'Bradley Beal', 'Escolta', 193, 3, 8, NULL),
+(74, 'Jusuf Nurkic', 'Pivot', 213, 20, 8, NULL),
+(75, 'Tyus Jones', 'Base', 185, 21, 8, NULL),
+(76, 'Grayson Allen', 'Escolta', 193, 8, 8, NULL),
+(77, 'Royce ONeale', 'Alero', 193, 0, 8, NULL),
+(78, 'Mason Plumlee', 'Pivot', 208, 44, 8, NULL),
+(79, 'Josh Okogie', 'Escolta', 193, 2, 8, NULL),
+(80, 'Bol Bol', 'Ala-Pivot', 221, 11, 8, NULL);
+
+-- --------------------------------------------------------
+
+CREATE TABLE `partidos` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `jornada` int(11) DEFAULT NULL,
+  `fecha` date DEFAULT NULL,
+  `id_local` int(11) DEFAULT NULL,
+  `id_visitante` int(11) DEFAULT NULL,
+  `puntos_local` int(11) DEFAULT 0,
+  `puntos_visitante` int(11) DEFAULT 0,
+  `jugado` tinyint(1) DEFAULT 0,
+  PRIMARY KEY (`id`),
+  KEY `id_local` (`id_local`),
+  KEY `id_visitante` (`id_visitante`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+INSERT INTO `partidos` (`id`, `jornada`, `fecha`, `id_local`, `id_visitante`, `puntos_local`, `puntos_visitante`, `jugado`) VALUES
+(1, 1, '2023-10-24', 5, 1, 119, 107, 1),
+(2, 1, '2023-10-24', 2, 8, 104, 108, 1),
+(3, 1, '2023-10-25', 3, 6, 110, 106, 1),
+(4, 1, '2023-10-25', 4, 7, 120, 118, 1),
+(5, 2, '2023-12-25', 1, 3, 115, 126, 1),
+(6, 2, '2023-12-25', 5, 2, 120, 114, 1),
+(7, 2, '2023-12-25', 8, 7, 114, 128, 1),
+(8, 2, '2023-12-25', 6, 4, 102, 110, 1),
+(9, 3, '2024-01-01', 1, 2, 121, 118, 1),
+(10, 3, '2024-01-01', 3, 4, 115, 119, 1),
+(11, 3, '2024-01-01', 7, 5, 125, 120, 1),
+(12, 3, '2024-01-01', 6, 8, 108, 112, 1);
+
+-- --------------------------------------------------------
+
+CREATE TABLE `stats_historicas` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `id_jugador` int(11) DEFAULT NULL,
+  `temporada` varchar(10) DEFAULT NULL,
+  `puntos_media` decimal(4,1) DEFAULT NULL,
+  `rebotes_media` decimal(4,1) DEFAULT NULL,
+  `asistencias_media` decimal(4,1) DEFAULT NULL,
+  `porcentaje_t3` decimal(4,1) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `id_jugador` (`id_jugador`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+INSERT INTO `stats_historicas` (`id`, `id_jugador`, `temporada`, `puntos_media`, `rebotes_media`, `asistencias_media`, `porcentaje_t3`) VALUES
+(1, 1, '2022-23', 28.9, 8.3, 6.8, 32.1),
+(2, 1, '2021-22', 30.3, 8.2, 6.2, 35.9),
+(3, 1, '2020-21', 25.0, 7.7, 7.8, 36.5),
+(4, 2, '2022-23', 25.9, 12.5, 2.6, 25.7),
+(5, 2, '2021-22', 23.2, 9.9, 3.1, 18.6),
+(6, 11, '2022-23', 29.4, 6.1, 6.3, 42.7),
+(7, 11, '2021-22', 25.5, 5.2, 6.3, 38.0),
+(8, 21, '2022-23', 30.1, 8.8, 4.6, 35.0),
+(9, 21, '2021-22', 26.9, 8.0, 4.4, 35.3),
+(10, 31, '2022-23', 31.1, 11.8, 5.7, 27.5),
+(11, 31, '2021-22', 29.9, 11.6, 5.8, 29.3),
+(12, 41, '2022-23', 24.5, 11.8, 9.8, 38.3),
+(13, 41, '2021-22', 27.1, 13.8, 7.9, 33.7),
+(14, 51, '2022-23', 22.9, 5.9, 5.3, 35.0),
+(15, 61, '2022-23', 32.4, 8.6, 8.0, 34.2),
+(16, 61, '2021-22', 28.4, 9.1, 8.7, 35.3),
+(17, 71, '2022-23', 29.1, 6.7, 5.0, 40.4);
+
+-- --------------------------------------------------------
+
+CREATE TABLE `stats_partidos` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `fecha` date NOT NULL,
+  `id_jugador` int(11) NOT NULL,
+  `id_partido` int(11) DEFAULT NULL,
+  `minutos` int(11) DEFAULT NULL,
+  `puntos` int(11) DEFAULT NULL,
+  `t2_metidos` int(11) DEFAULT 0,
+  `t2_intentados` int(11) DEFAULT 0,
+  `t3_metidos` int(11) DEFAULT 0,
+  `t3_intentados` int(11) DEFAULT 0,
+  `tl_metidos` int(11) DEFAULT 0,
+  `tl_intentados` int(11) DEFAULT 0,
+  `reb_ofensivos` int(11) DEFAULT 0,
+  `reb_defensivos` int(11) DEFAULT 0,
+  `asistencias` int(11) DEFAULT 0,
+  `robos` int(11) DEFAULT 0,
+  `tapones` int(11) DEFAULT 0,
+  `perdidas` int(11) DEFAULT 0,
+  `faltas` int(11) DEFAULT 0,
+  `valoracion` int(11) DEFAULT 0,
+  PRIMARY KEY (`id`),
+  KEY `id_jugador` (`id_jugador`),
+  KEY `id_partido` (`id_partido`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+INSERT INTO `stats_partidos` (`id`, `fecha`, `id_jugador`, `id_partido`, `minutos`, `puntos`, `t2_metidos`, `t2_intentados`, `t3_metidos`, `t3_intentados`, `tl_metidos`, `tl_intentados`, `reb_ofensivos`, `reb_defensivos`, `asistencias`, `robos`, `tapones`, `perdidas`, `faltas`, `valoracion`) VALUES
+(1, '2023-10-24', 41, 1, 36, 29, 10, 16, 3, 5, 0, 0, 3, 10, 11, 1, 1, 2, 2, 35),
+(2, '2023-10-24', 1, 1, 35, 21, 8, 14, 1, 4, 2, 3, 1, 7, 5, 1, 0, 3, 1, 20),
+(3, '2023-10-24', 11, 2, 36, 27, 4, 8, 5, 12, 4, 4, 0, 5, 4, 2, 0, 3, 2, 24),
+(4, '2023-10-24', 72, 2, 35, 32, 10, 15, 3, 6, 3, 3, 0, 6, 8, 1, 0, 2, 3, 33),
+(5, '2023-10-25', 21, 3, 38, 22, 7, 14, 2, 8, 2, 2, 1, 7, 5, 1, 1, 2, 2, 22),
+(6, '2023-10-25', 51, 3, 34, 19, 7, 13, 0, 2, 5, 6, 2, 3, 5, 2, 0, 1, 2, 21),
+(7, '2023-10-25', 31, 4, 35, 35, 14, 20, 1, 3, 4, 7, 3, 13, 5, 1, 2, 4, 3, 42),
+(8, '2023-10-25', 61, 4, 38, 33, 9, 15, 4, 9, 3, 4, 1, 9, 11, 1, 0, 4, 2, 38),
+(9, '2023-12-25', 1, 5, 38, 28, 10, 15, 2, 6, 2, 4, 0, 8, 9, 0, 0, 0, 0, 30),
+(10, '2023-12-25', 21, 5, 40, 35, 8, 12, 4, 9, 0, 0, 2, 8, 5, 0, 0, 0, 0, 38),
+(11, '2023-12-25', 41, 6, 38, 26, 8, 14, 0, 2, 10, 10, 4, 10, 8, 1, 0, 3, 2, 38),
+(12, '2023-12-25', 11, 6, 35, 18, 4, 6, 2, 12, 0, 0, 0, 0, 6, 0, 0, 4, 0, 12),
+(13, '2023-12-25', 72, 7, 37, 20, 6, 13, 2, 6, 2, 2, 1, 3, 10, 0, 0, 2, 4, 20),
+(14, '2023-12-25', 61, 7, 39, 50, 7, 11, 8, 16, 12, 12, 1, 5, 15, 4, 3, 4, 2, 60),
+(15, '2023-12-25', 51, 8, 36, 26, 8, 15, 1, 3, 7, 8, 1, 6, 6, 2, 0, 1, 2, 28),
+(16, '2023-12-25', 31, 8, 34, 30, 11, 16, 0, 2, 8, 10, 2, 10, 4, 1, 2, 3, 3, 36),
+(17, '2024-01-01', 1, 9, 38, 32, 10, 16, 2, 5, 6, 8, 1, 9, 10, 1, 1, 3, 2, 38),
+(18, '2024-01-01', 11, 9, 39, 40, 6, 10, 8, 15, 4, 4, 0, 4, 7, 2, 0, 4, 1, 36),
+(19, '2024-01-01', 21, 10, 39, 30, 8, 15, 4, 9, 2, 2, 1, 6, 4, 1, 0, 2, 2, 25),
+(20, '2024-01-01', 31, 10, 37, 45, 16, 22, 1, 2, 10, 14, 4, 12, 6, 1, 2, 4, 3, 48),
+(21, '2024-01-01', 61, 11, 40, 41, 10, 18, 5, 11, 6, 7, 1, 8, 12, 2, 0, 5, 3, 40),
+(22, '2024-01-01', 41, 11, 38, 35, 12, 17, 2, 4, 5, 5, 5, 10, 9, 1, 1, 3, 2, 45),
+(23, '2024-01-01', 51, 12, 37, 28, 9, 16, 1, 3, 7, 8, 2, 5, 6, 3, 0, 2, 1, 31),
+(24, '2024-01-01', 72, 12, 36, 35, 10, 18, 4, 8, 7, 7, 1, 4, 5, 1, 0, 2, 2, 32),
+(25, '2023-10-24', 2, 1, 35, 15, 6, 10, 0, 0, 3, 8, 0, 0, 0, 0, 0, 1, 0, 0),
+(26, '2023-10-24', 4, 1, 30, 12, 4, 6, 1, 3, 1, 1, 0, 0, 0, 0, 0, 5, 0, 0),
+(27, '2023-10-24', 3, 1, 32, 14, 4, 8, 2, 9, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0),
+(28, '2023-10-24', 2, 1, 35, 15, 6, 10, 0, 0, 3, 8, 0, 0, 0, 0, 0, 1, 0, 0),
+(29, '2023-10-24', 4, 1, 30, 12, 4, 6, 1, 3, 1, 1, 0, 0, 0, 0, 0, 5, 0, 0),
+(30, '2023-10-24', 3, 1, 32, 14, 4, 8, 2, 9, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0);
+
+-- --------------------------------------------------------
+
+CREATE TABLE `usuarios` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nombre_usuario` varchar(50) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `nombre_completo` varchar(100) DEFAULT NULL,
+  `rol` varchar(20) DEFAULT 'entrenador',
+  `id_equipo` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `nombre_usuario` (`nombre_usuario`),
+  KEY `id_equipo` (`id_equipo`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+INSERT INTO `usuarios` (`id`, `nombre_usuario`, `password`, `nombre_completo`, `rol`, `id_equipo`) VALUES
+(1, 'admin', 'admin123', 'Adam Silver', 'admin', NULL),
+(2, 'coach_lakers', 'pass123', 'JJ Redick', 'entrenador', 1),
+(3, 'coach_gsw', 'pass123', 'Steve Kerr', 'entrenador', 2),
+(4, 'coach_bos', 'pass123', 'Joe Mazzulla', 'entrenador', 3),
+(5, 'coach_mil', 'pass123', 'Doc Rivers', 'entrenador', 4),
+(6, 'coach_den', 'pass123', 'Michael Malone', 'entrenador', 5),
+(7, 'coach_mia', 'pass123', 'Erik Spoelstra', 'entrenador', 6),
+(8, 'coach_dal', 'pass123', 'Jason Kidd', 'entrenador', 7),
+(9, 'coach_phx', 'pass123', 'Mike Budenholzer', 'entrenador', 8);
+
+-- --------------------------------------------------------
+
+-- VISTA DE CLASIFICACIÓN
+CREATE VIEW `vista_clasificacion` AS SELECT `e`.`nombre` AS `Equipo`, count(`p`.`id`) AS `PJ`, sum(case when `p`.`id_local` = `e`.`id` and `p`.`puntos_local` > `p`.`puntos_visitante` then 1 when `p`.`id_visitante` = `e`.`id` and `p`.`puntos_visitante` > `p`.`puntos_local` then 1 else 0 end) AS `Victorias`, sum(case when `p`.`id_local` = `e`.`id` and `p`.`puntos_local` < `p`.`puntos_visitante` then 1 when `p`.`id_visitante` = `e`.`id` and `p`.`puntos_visitante` < `p`.`puntos_local` then 1 else 0 end) AS `Derrotas`, sum(case when `p`.`id_local` = `e`.`id` then `p`.`puntos_local` - `p`.`puntos_visitante` when `p`.`id_visitante` = `e`.`id` then `p`.`puntos_visitante` - `p`.`puntos_local` else 0 end) AS `Diferencia_Puntos` FROM (`equipos` `e` join `partidos` `p` on(`e`.`id` = `p`.`id_local` or `e`.`id` = `p`.`id_visitante`)) WHERE `p`.`jugado` = 1 GROUP BY `e`.`id`, `e`.`nombre` ORDER BY sum(case when `p`.`id_local` = `e`.`id` and `p`.`puntos_local` > `p`.`puntos_visitante` then 1 when `p`.`id_visitante` = `e`.`id` and `p`.`puntos_visitante` > `p`.`puntos_local` then 1 else 0 end) DESC, sum(case when `p`.`id_local` = `e`.`id` then `p`.`puntos_local` - `p`.`puntos_visitante` when `p`.`id_visitante` = `e`.`id` then `p`.`puntos_visitante` - `p`.`puntos_local` else 0 end) DESC ;
+
+-- --------------------------------------------------------
+
+-- APLICANDO LAS RESTRICCIONES EN CASCADA FINALES
+
+ALTER TABLE `jugadores`
+  ADD CONSTRAINT `jugadores_ibfk_1` FOREIGN KEY (`id_equipo`) REFERENCES `equipos` (`id`) ON DELETE CASCADE;
+
+ALTER TABLE `partidos`
+  ADD CONSTRAINT `partidos_ibfk_1` FOREIGN KEY (`id_local`) REFERENCES `equipos` (`id`) ON DELETE CASCADE,
+  ADD CONSTRAINT `partidos_ibfk_2` FOREIGN KEY (`id_visitante`) REFERENCES `equipos` (`id`) ON DELETE CASCADE;
+
+ALTER TABLE `stats_historicas`
+  ADD CONSTRAINT `stats_historicas_ibfk_1` FOREIGN KEY (`id_jugador`) REFERENCES `jugadores` (`id`) ON DELETE CASCADE;
+
+ALTER TABLE `stats_partidos`
+  ADD CONSTRAINT `stats_partidos_ibfk_1` FOREIGN KEY (`id_jugador`) REFERENCES `jugadores` (`id`) ON DELETE CASCADE,
+  ADD CONSTRAINT `stats_partidos_ibfk_2` FOREIGN KEY (`id_partido`) REFERENCES `partidos` (`id`) ON DELETE CASCADE;
+
+ALTER TABLE `usuarios`
+  ADD CONSTRAINT `usuarios_ibfk_1` FOREIGN KEY (`id_equipo`) REFERENCES `equipos` (`id`) ON DELETE CASCADE;
+
+COMMIT;

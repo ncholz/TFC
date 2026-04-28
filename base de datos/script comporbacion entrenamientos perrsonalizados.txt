@@ -1,0 +1,11 @@
+-- Anthony Davis: Falla muchos tiros libres (3/8 = 37%) -> Tu app le recomendará MEJORA_TIRO
+INSERT INTO `stats_partidos` (`fecha`, `id_jugador`, `id_partido`, `minutos`, `puntos`, `t2_metidos`, `t2_intentados`, `t3_metidos`, `t3_intentados`, `tl_metidos`, `tl_intentados`, `perdidas`)
+VALUES ('2023-10-24', 2, 1, 35, 15, 6, 10, 0, 0, 3, 8, 1);
+
+-- Austin Reaves: Pierde muchos balones (5 perdidas) -> Tu app le recomendará TRANSICION
+INSERT INTO `stats_partidos` (`fecha`, `id_jugador`, `id_partido`, `minutos`, `puntos`, `t2_metidos`, `t2_intentados`, `t3_metidos`, `t3_intentados`, `tl_metidos`, `tl_intentados`, `perdidas`)
+VALUES ('2023-10-24', 4, 1, 30, 12, 4, 6, 1, 3, 1, 1, 5);
+
+-- D'Angelo Russell: Tira fatal de tres (2/9 = 22%) -> Tu app le recomendará MEJORA_TRIPLES
+INSERT INTO `stats_partidos` (`fecha`, `id_jugador`, `id_partido`, `minutos`, `puntos`, `t2_metidos`, `t2_intentados`, `t3_metidos`, `t3_intentados`, `tl_metidos`, `tl_intentados`, `perdidas`)
+VALUES ('2023-10-24', 3, 1, 32, 14, 4, 8, 2, 9, 0, 0, 2);

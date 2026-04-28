@@ -1,0 +1,20 @@
+C:\Users\nache\source\repos\Prueba pizarra\Prueba pizarra\obj\Debug\net10.0-windows\UserControl1.baml
+C:\Users\nache\source\repos\Prueba pizarra\Prueba pizarra\obj\Debug\net10.0-windows\UserControl1.g.cs
+C:\Users\nache\source\repos\Prueba pizarra\Prueba pizarra\obj\Debug\net10.0-windows\Prueba pizarra_MarkupCompile.cache
+C:\Users\nache\source\repos\Prueba pizarra\Prueba pizarra\obj\Debug\net10.0-windows\Prueba pizarra.g.resources
+C:\Users\nache\source\repos\Prueba pizarra\Prueba pizarra\obj\Debug\net10.0-windows\Prueba_pizarra.Form1.resources
+C:\Users\nache\source\repos\Prueba pizarra\Prueba pizarra\obj\Debug\net10.0-windows\Prueba pizarra.csproj.GenerateResource.cache
+C:\Users\nache\source\repos\Prueba pizarra\Prueba pizarra\obj\Debug\net10.0-windows\Prueba pizarra.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nache\source\repos\Prueba pizarra\Prueba pizarra\obj\Debug\net10.0-windows\Prueba pizarra.AssemblyInfoInputs.cache
+C:\Users\nache\source\repos\Prueba pizarra\Prueba pizarra\obj\Debug\net10.0-windows\Prueba pizarra.AssemblyInfo.cs
+C:\Users\nache\source\repos\Prueba pizarra\Prueba pizarra\obj\Debug\net10.0-windows\Prueba pizarra.csproj.CoreCompileInputs.cache
+C:\Users\nache\source\repos\Prueba pizarra\Prueba pizarra\bin\Debug\net10.0-windows\Prueba pizarra.exe
+C:\Users\nache\source\repos\Prueba pizarra\Prueba pizarra\bin\Debug\net10.0-windows\Prueba pizarra.deps.json
+C:\Users\nache\source\repos\Prueba pizarra\Prueba pizarra\bin\Debug\net10.0-windows\Prueba pizarra.runtimeconfig.json
+C:\Users\nache\source\repos\Prueba pizarra\Prueba pizarra\bin\Debug\net10.0-windows\Prueba pizarra.dll
+C:\Users\nache\source\repos\Prueba pizarra\Prueba pizarra\bin\Debug\net10.0-windows\Prueba pizarra.pdb
+C:\Users\nache\source\repos\Prueba pizarra\Prueba pizarra\obj\Debug\net10.0-windows\Prueba pizarra.dll
+C:\Users\nache\source\repos\Prueba pizarra\Prueba pizarra\obj\Debug\net10.0-windows\refint\Prueba pizarra.dll
+C:\Users\nache\source\repos\Prueba pizarra\Prueba pizarra\obj\Debug\net10.0-windows\Prueba pizarra.pdb
+C:\Users\nache\source\repos\Prueba pizarra\Prueba pizarra\obj\Debug\net10.0-windows\Prueba pizarra.genruntimeconfig.cache
+C:\Users\nache\source\repos\Prueba pizarra\Prueba pizarra\obj\Debug\net10.0-windows\ref\Prueba pizarra.dll

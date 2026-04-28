@@ -1,0 +1,148 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\nache\\source\\repos\\Prueba pizarra\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F989DE0F-2458-6053-6ACA-70689423825B}|Prueba pizarra\\Prueba pizarra.csproj|c:\\users\\nache\\source\\repos\\prueba pizarra\\prueba pizarra\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F989DE0F-2458-6053-6ACA-70689423825B}|Prueba pizarra\\Prueba pizarra.csproj|solutionrelative:prueba pizarra\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F989DE0F-2458-6053-6ACA-70689423825B}|Prueba pizarra\\Prueba pizarra.csproj|c:\\users\\nache\\source\\repos\\prueba pizarra\\prueba pizarra\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F989DE0F-2458-6053-6ACA-70689423825B}|Prueba pizarra\\Prueba pizarra.csproj|solutionrelative:prueba pizarra\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FED4D1CF-EFA5-4398-83B6-AE7B6F145E0E}|Prueba pizarra\\Prueba pizarra.csproj|C:\\Users\\nache\\source\\repos\\Prueba pizarra\\prueba pizarra\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{FED4D1CF-EFA5-4398-83B6-AE7B6F145E0E}|Prueba pizarra\\Prueba pizarra.csproj|solutionrelative:prueba pizarra\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F989DE0F-2458-6053-6ACA-70689423825B}|Prueba pizarra\\Prueba pizarra.csproj|c:\\users\\nache\\source\\repos\\prueba pizarra\\prueba pizarra\\usercontrol1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{F989DE0F-2458-6053-6ACA-70689423825B}|Prueba pizarra\\Prueba pizarra.csproj|solutionrelative:prueba pizarra\\usercontrol1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F989DE0F-2458-6053-6ACA-70689423825B}|Prueba pizarra\\Prueba pizarra.csproj|c:\\users\\nache\\source\\repos\\prueba pizarra\\prueba pizarra\\prueba pizarra.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{F989DE0F-2458-6053-6ACA-70689423825B}|Prueba pizarra\\Prueba pizarra.csproj|solutionrelative:prueba pizarra\\prueba pizarra.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F989DE0F-2458-6053-6ACA-70689423825B}|Prueba pizarra\\Prueba pizarra.csproj|c:\\users\\nache\\source\\repos\\prueba pizarra\\prueba pizarra\\usercontrol1.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F989DE0F-2458-6053-6ACA-70689423825B}|Prueba pizarra\\Prueba pizarra.csproj|solutionrelative:prueba pizarra\\usercontrol1.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F989DE0F-2458-6053-6ACA-70689423825B}|Prueba pizarra\\Prueba pizarra.csproj|c:\\users\\nache\\source\\repos\\prueba pizarra\\prueba pizarra\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F989DE0F-2458-6053-6ACA-70689423825B}|Prueba pizarra\\Prueba pizarra.csproj|solutionrelative:prueba pizarra\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UserControl1.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\nache\\source\\repos\\Prueba pizarra\\Prueba pizarra\\UserControl1.xaml.cs",
+              "RelativeDocumentMoniker": "Prueba pizarra\\UserControl1.xaml.cs",
+              "ToolTip": "C:\\Users\\nache\\source\\repos\\Prueba pizarra\\Prueba pizarra\\UserControl1.xaml.cs",
+              "RelativeToolTip": "Prueba pizarra\\UserControl1.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-14T21:02:59.118Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\nache\\source\\repos\\Prueba pizarra\\Prueba pizarra\\Form1.cs",
+              "RelativeDocumentMoniker": "Prueba pizarra\\Form1.cs",
+              "ToolTip": "C:\\Users\\nache\\source\\repos\\Prueba pizarra\\Prueba pizarra\\Form1.cs [Dise\u00F1o]*",
+              "RelativeToolTip": "Prueba pizarra\\Form1.cs [Dise\u00F1o]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-22T12:09:04.567Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\nache\\source\\repos\\Prueba pizarra\\Prueba pizarra\\Form1.cs",
+              "RelativeDocumentMoniker": "Prueba pizarra\\Form1.cs",
+              "ToolTip": "C:\\Users\\nache\\source\\repos\\Prueba pizarra\\Prueba pizarra\\Form1.cs*",
+              "RelativeToolTip": "Prueba pizarra\\Form1.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-14T21:10:18.055Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\nache\\source\\repos\\Prueba pizarra\\Prueba pizarra\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "Prueba pizarra\\Form1.Designer.cs",
+              "ToolTip": "C:\\Users\\nache\\source\\repos\\Prueba pizarra\\Prueba pizarra\\Form1.Designer.cs*",
+              "RelativeToolTip": "Prueba pizarra\\Form1.Designer.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-14T21:10:57.907Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserControl1.xaml",
+              "DocumentMoniker": "C:\\Users\\nache\\source\\repos\\Prueba pizarra\\Prueba pizarra\\UserControl1.xaml",
+              "RelativeDocumentMoniker": "Prueba pizarra\\UserControl1.xaml",
+              "ToolTip": "C:\\Users\\nache\\source\\repos\\Prueba pizarra\\Prueba pizarra\\UserControl1.xaml",
+              "RelativeToolTip": "Prueba pizarra\\UserControl1.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-03-14T21:01:41.897Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Prueba pizarra.csproj",
+              "DocumentMoniker": "C:\\Users\\nache\\source\\repos\\Prueba pizarra\\Prueba pizarra\\Prueba pizarra.csproj",
+              "RelativeDocumentMoniker": "Prueba pizarra\\Prueba pizarra.csproj",
+              "ToolTip": "C:\\Users\\nache\\source\\repos\\Prueba pizarra\\Prueba pizarra\\Prueba pizarra.csproj",
+              "RelativeToolTip": "Prueba pizarra\\Prueba pizarra.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-03-14T20:56:11.194Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\nache\\source\\repos\\Prueba pizarra\\Prueba pizarra\\Form1.cs",
+              "RelativeDocumentMoniker": "Prueba pizarra\\Form1.cs",
+              "ToolTip": "C:\\Users\\nache\\source\\repos\\Prueba pizarra\\Prueba pizarra\\Form1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Prueba pizarra\\Form1.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-14T20:54:16.171Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,193 @@
+USE gestion_basket;
+
+-- ==========================================================
+-- 1. INSERTS EQUIPOS (6 Equipos)
+-- ==========================================================
+INSERT INTO equipos (nombre, ciudad, logo_url) VALUES 
+('Dragones de Madrid', 'Madrid', 'url_logo_1.png'),     -- ID 1
+('Tigres de Barcelona', 'Barcelona', 'url_logo_2.png'), -- ID 2
+('Águilas de Valencia', 'Valencia', 'url_logo_3.png'),  -- ID 3
+('Leones de Sevilla', 'Sevilla', 'url_logo_4.png'),     -- ID 4
+('Osos de Bilbao', 'Bilbao', 'url_logo_5.png'),         -- ID 5
+('Rayos de Málaga', 'Málaga', 'url_logo_6.png');        -- ID 6
+
+-- ==========================================================
+-- 2. INSERTS USUARIOS (1 Admin, 6 Entrenadores)
+-- ==========================================================
+INSERT INTO usuarios (nombre_usuario, password, nombre_completo, rol, id_equipo) VALUES
+('admin', 'admin123', 'Administrador General', 'admin', NULL),
+('coach_mad', 'pass123', 'Pablo Laso', 'entrenador', 1),
+('coach_bcn', 'pass123', 'Sarunas Jasi', 'entrenador', 2),
+('coach_val', 'pass123', 'Alex Mumbru', 'entrenador', 3),
+('coach_sev', 'pass123', 'Ibon Navarro', 'entrenador', 4),
+('coach_bil', 'pass123', 'Jaume Ponsarnau', 'entrenador', 5),
+('coach_mal', 'pass123', 'Luis Casimiro', 'entrenador', 6);
+
+-- ==========================================================
+-- 3. INSERTS JUGADORES (10 por equipo = 60 Jugadores)
+-- ==========================================================
+
+-- EQUIPO 1: Dragones de Madrid
+INSERT INTO jugadores (nombre, posicion, altura_cm, dorsal, id_equipo, foto_url) VALUES
+('Sergio "El Mago"', 'Base', 190, 23, 1, 'img1.jpg'),
+('Facundo C.', 'Base', 180, 7, 1, 'img2.jpg'),
+('Dzanan M.', 'Escolta', 205, 11, 1, 'img3.jpg'),
+('Rudy F.', 'Alero', 196, 5, 1, 'img4.jpg'),
+('Mario H.', 'Alero', 203, 11, 1, 'img5.jpg'),
+('Guerschon Y.', 'Ala-Pivot', 201, 28, 1, 'img6.jpg'),
+('Gabriel D.', 'Ala-Pivot', 204, 14, 1, 'img7.jpg'),
+('Edy T.', 'Pivot', 220, 22, 1, 'img8.jpg'),
+('Vincent P.', 'Pivot', 213, 17, 1, 'img9.jpg'),
+('Eli N.', 'Base', 192, 6, 1, 'img10.jpg');
+
+-- EQUIPO 2: Tigres de Barcelona
+INSERT INTO jugadores (nombre, posicion, altura_cm, dorsal, id_equipo, foto_url) VALUES
+('Nico L.', 'Base', 190, 1, 2, 'img11.jpg'),
+('Tomas S.', 'Base', 200, 13, 2, 'img12.jpg'),
+('Alex A.', 'Escolta', 198, 21, 2, 'img13.jpg'),
+('Dario B.', 'Escolta', 196, 8, 2, 'img14.jpg'),
+('Nikola K.', 'Alero', 202, 33, 2, 'img15.jpg'),
+('Jabari P.', 'Ala-Pivot', 203, 2, 2, 'img16.jpg'),
+('Oscar D.', 'Ala-Pivot', 206, 20, 2, 'img17.jpg'),
+('Willy H.', 'Pivot', 210, 14, 2, 'img18.jpg'),
+('Jan V.', 'Pivot', 213, 6, 2, 'img19.jpg'),
+('James N.', 'Pivot', 212, 46, 2, 'img20.jpg');
+
+-- EQUIPO 3: Águilas de Valencia
+INSERT INTO jugadores (nombre, posicion, altura_cm, dorsal, id_equipo) VALUES
+('Chris J.', 'Base', 188, 0, 3), ('Stefan J.', 'Base', 196, 16, 3),
+('Jared H.', 'Escolta', 190, 2, 3), ('Xabi L.', 'Alero', 201, 6, 3),
+('Victor C.', 'Alero', 199, 10, 3), ('Jaime P.', 'Ala-Pivot', 205, 4, 3),
+('Damien I.', 'Ala-Pivot', 206, 5, 3), ('Brandon D.', 'Pivot', 208, 0, 3),
+('Boubacar T.', 'Pivot', 215, 32, 3), ('Semi O.', 'Alero', 200, 37, 3);
+
+-- EQUIPO 4: Leones de Sevilla (Relleno rápido)
+INSERT INTO jugadores (nombre, posicion, altura_cm, dorsal, id_equipo) VALUES
+('Tyson P.', 'Base', 185, 4, 4), ('Jean M.', 'Escolta', 192, 11, 4),
+('Djedovic', 'Alero', 198, 14, 4), ('Dylan O.', 'Pivot', 210, 31, 4),
+('Kameron T.', 'Ala-Pivot', 206, 5, 4), ('David K.', 'Pivot', 213, 12, 4),
+('Perry K.', 'Base', 180, 55, 4), ('Barreiro', 'Alero', 203, 7, 4),
+('Lima A.', 'Pivot', 208, 23, 4), ('Alberto D.', 'Base', 188, 9, 4);
+
+-- EQUIPO 5: Osos de Bilbao
+INSERT INTO jugadores (nombre, posicion, altura_cm, dorsal, id_equipo) VALUES
+('Adam S.', 'Base', 190, 4, 5), ('Melwin P.', 'Base', 192, 2, 5),
+('Xavi R.', 'Alero', 199, 14, 5), ('Thijs D.', 'Ala-Pivot', 202, 19, 5),
+('Sacha K.', 'Pivot', 209, 22, 5), ('Hlinason', 'Pivot', 216, 34, 5),
+('Alex R.', 'Escolta', 195, 8, 5), ('Kullamae', 'Escolta', 194, 7, 5),
+('De Ridder', 'Ala-Pivot', 205, 12, 5), ('Renfroe', 'Base', 191, 30, 5);
+
+-- EQUIPO 6: Rayos de Málaga
+INSERT INTO jugadores (nombre, posicion, altura_cm, dorsal, id_equipo) VALUES
+('Kendrick P.', 'Base', 185, 3, 6), ('Alberto D.', 'Base', 186, 9, 6),
+('Dario B.', 'Escolta', 193, 8, 6), ('Kalinoski', 'Escolta', 192, 4, 6),
+('Melvin E.', 'Alero', 200, 11, 6), ('Will T.', 'Ala-Pivot', 203, 15, 6),
+('David K.', 'Pivot', 214, 45, 6), ('Yankuba S.', 'Pivot', 210, 17, 6),
+('Osetkowski', 'Ala-Pivot', 206, 1, 6), ('Taylor K.', 'Alero', 198, 22, 6);
+
+-- ==========================================================
+-- 4. INSERTS PARTIDOS (Calendario)
+-- ==========================================================
+
+-- JORNADA 1 (Ya jugados)
+INSERT INTO partidos (jornada, fecha, id_local, id_visitante, puntos_local, puntos_visitante, jugado) VALUES
+(1, '2023-10-01', 1, 2, 85, 82, 1), -- Madrid vs Barcelona (Gana Madrid)
+(1, '2023-10-01', 3, 4, 70, 75, 1), -- Valencia vs Sevilla (Gana Sevilla)
+(1, '2023-10-01', 5, 6, 68, 90, 1); -- Bilbao vs Málaga (Gana Málaga)
+
+-- JORNADA 2 (Ya jugados)
+INSERT INTO partidos (jornada, fecha, id_local, id_visitante, puntos_local, puntos_visitante, jugado) VALUES
+(2, '2023-10-08', 2, 3, 88, 70, 1), -- Barcelona vs Valencia (Gana BCN)
+(2, '2023-10-08', 4, 5, 80, 82, 1), -- Sevilla vs Bilbao (Gana Bilbao)
+(2, '2023-10-08', 6, 1, 75, 78, 1); -- Málaga vs Madrid (Gana Madrid)
+
+-- JORNADA 3 (Pendientes)
+INSERT INTO partidos (jornada, fecha, id_local, id_visitante, puntos_local, puntos_visitante, jugado) VALUES
+(3, '2023-10-15', 1, 3, 0, 0, 0),
+(3, '2023-10-15', 2, 5, 0, 0, 0),
+(3, '2023-10-15', 4, 6, 0, 0, 0);
+
+-- ==========================================================
+-- 5. INSERTS STATS_PARTIDOS (Datos para el algoritmo)
+-- ==========================================================
+-- NOTA: Insertamos datos del Partido ID 1 (Madrid vs Barcelona)
+-- Esto es crucial para probar "Mejora Triples" vs "Mejora Rebote"
+
+-- ESTADÍSTICAS JUGADORES MADRID (ID Equipo 1) en Partido ID 1
+INSERT INTO stats_partidos 
+(fecha, id_jugador, id_partido, minutos, puntos, t2_metidos, t2_intentados, t3_metidos, t3_intentados, tl_metidos, tl_intentados, reb_ofensivos, reb_defensivos, asistencias, valoracion) 
+VALUES
+('2023-10-01', 1, 1, 25, 15, 3, 5, 3, 8, 0, 0, 0, 2, 5, 18), -- Sergio: Buen tiro, mal % triple (3/8) -> Candidato entreno tiro
+('2023-10-01', 3, 1, 28, 22, 5, 7, 2, 4, 6, 7, 1, 4, 2, 25), -- Musa: Partidazo
+('2023-10-01', 8, 1, 30, 10, 5, 5, 0, 0, 0, 2, 4, 8, 1, 20), -- Tavares: Reboteador
+('2023-10-01', 2, 1, 15, 5, 1, 3, 1, 4, 0, 0, 0, 1, 4, 5);   -- Facu: Bajo %
+
+-- ESTADÍSTICAS JUGADORES BARCELONA (ID Equipo 2) en Partido ID 1
+INSERT INTO stats_partidos 
+(fecha, id_jugador, id_partido, minutos, puntos, t2_metidos, t2_intentados, t3_metidos, t3_intentados, reb_ofensivos, reb_defensivos, asistencias, valoracion) 
+VALUES
+('2023-10-01', 11, 1, 28, 18, 4, 6, 2, 5, 0, 3, 6, 20), -- Lapro
+('2023-10-01', 19, 1, 25, 12, 6, 8, 0, 1, 2, 5, 1, 15); -- Vesely
+
+-- ESTADÍSTICAS JUGADORES MADRID (ID Equipo 1) en Partido ID 6 (Málaga vs Madrid)
+INSERT INTO stats_partidos 
+(fecha, id_jugador, id_partido, minutos, puntos, t2_metidos, t2_intentados, t3_metidos, t3_intentados, reb_defensivos, asistencias, valoracion) 
+VALUES
+('2023-10-08', 1, 6, 20, 8, 2, 6, 1, 6, 1, 4, 5),   -- Sergio: Mal partido en tiro (1/6 T3) -> EL ALGORITMO DEBERÍA SUGERIR TIRO
+('2023-10-08', 8, 6, 25, 14, 7, 9, 0, 0, 10, 2, 24); -- Tavares: Constante
+
+-- ==========================================================
+-- 6. INSERTS STATS_HISTORICAS (Para comparativas)
+-- ==========================================================
+INSERT INTO stats_historicas (id_jugador, temporada, puntos_media, rebotes_media, asistencias_media, porcentaje_t3) VALUES
+(1, '22/23', 12.5, 2.1, 5.5, 38.5), -- Sergio Llull año pasado
+(8, '22/23', 10.2, 7.8, 1.2, 0.0),  -- Tavares año pasado
+(11, '22/23', 14.1, 3.0, 4.5, 41.2); -- Lapro año pasado
+
+-- ==========================================================
+-- 7. INSERTS ENTRENAMIENTOS (Catálogo)
+-- ==========================================================
+INSERT INTO entrenamientos (nombre, tipo, descripcion) VALUES
+('Mecánica de Tiro Básica', 'MEJORA_TIRO', 'Sesión de 100 tiros estáticos desde 5 posiciones para corregir mecánica.'),
+('Triples en Transición', 'MEJORA_TRIPLES', 'Ejercicios de llegar y tirar (catch & shoot) tras carrera.'),
+('Defensa 1vs1', 'MEJORA_DEFENSA', 'Ejercicios de desplazamiento lateral y uso de manos sin falta.'),
+('Cierre del Rebote', 'MEJORA_REBOTE', 'Trabajo de box-out y captura de balón en el punto más alto.'),
+('Pick and Roll Ofensivo', 'TACTICA', 'Lectura de ventajas tras bloqueo directo central.'),
+('Pase bajo presión', 'MEJORA_PASE', 'Circuitos de pase con defensores activos cortando líneas.'),
+('Tiros Libres bajo fatiga', 'MEJORA_TIRO', 'Series de tiros libres con pulsaciones altas tras sprint.');
+
+
+
+-- ==========================================================
+-- INSERTS ADICIONALES DE USUARIOS (Staff, Ayudantes y Admins)
+-- ==========================================================
+
+INSERT INTO usuarios (nombre_usuario, password, nombre_completo, rol, id_equipo) VALUES
+-- 1. Ayudantes (Assistant Coaches) - Uno extra por equipo
+('asst_mad', 'pass123', 'Chus Mateo', 'entrenador', 1),       -- Ayudante Madrid
+('asst_bcn', 'pass123', 'Roger Grimau', 'entrenador', 2),     -- Ayudante Barça
+('asst_val', 'pass123', 'Fernando San Emeterio', 'entrenador', 3), -- Ayudante Valencia
+('asst_sev', 'pass123', 'Javi Carrasco', 'entrenador', 4),    -- Ayudante Sevilla
+('asst_bil', 'pass123', 'Javi Salgado', 'entrenador', 5),     -- Ayudante Bilbao
+('asst_mal', 'pass123', 'Paco Aurioles', 'entrenador', 6),    -- Ayudante Málaga
+
+-- 2. Preparadores Físicos (Rol entrenador para tener acceso)
+('pf_mad', 'pass123', 'Juan Trapero', 'entrenador', 1),
+('pf_bcn', 'pass123', 'Andres Martin', 'entrenador', 2),
+('pf_val', 'pass123', 'Pedro Cotoli', 'entrenador', 3),
+
+-- 3. Entrenadores de Cantera / Junior (Vinculados al equipo principal)
+('coach_jr_mad', 'pass123', 'Javier Juarez', 'entrenador', 1),
+('coach_jr_bcn', 'pass123', 'Gregor Fucka', 'entrenador', 2),
+('coach_jr_mal', 'pass123', 'Francis Tomé', 'entrenador', 6),
+
+-- 4. Delegados de Equipo
+('del_sev', 'pass123', 'Manuel Orozco', 'entrenador', 4),
+('del_bil', 'pass123', 'Mikel Torre', 'entrenador', 5),
+
+-- 5. Administradores Extra (Gestión y Soporte)
+('admin_global', 'admin123', 'Soporte Técnico', 'admin', NULL),
+('director_deportivo', 'admin123', 'Director de Liga', 'admin', NULL);
+
+-- Verificación rápida:
+-- SELECT * FROM usuarios;
