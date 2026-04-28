@@ -1,127 +1,104 @@
 RÚBRICA DE EVALUACIÓN
-ACTIVIDAD: ASPECTOS FORMALES (20%)
+ACTIVIDAD: CONTENIDOS (50%)
 Criterios
 Descriptores
 Muy bien
 Aceptable
 Mal/Pobre
-3 Estructura y corrección
-(faltas de ortografía,
-redacción) del
-documento (2)
-La documentación respeta la
-estructura propuesta para la memoria,
-incluyendo un índice, un apartado de
-introducción y unas conclusiones
-finales además de la bibliografía.
-Presenta una redacción correcta y
-coherente.
-No contiene faltas de ortografía ni
-errores en cuanto a puntuación.
-La documentación NO RESPETA
-POR COMPLETO la estructura
-propuesta Y OMITE algunos
-apartados Y/O presenta EN
-ALGUNOS CASOS una redacción
-incorrecta.
-No contiene faltas de ortografía
-graves, pero sí alguna leve, así como
-algún fallo en cuanto a puntuación.
-La documentación NO RESPETA la
-estructura propuesta Y presenta una
-redacción incorrecta.
-Contiene faltas de ortografía graves y
-errores continuos de puntuación.
-Calidad del diseño (1)
-El documento está correctamente
-maquetado y presenta un diseño limpio
-y adecuado en cuanto a formato,
-fuentes, integración de imágenes,
-cuadros, esquemas, etc.
-El documento está maquetado
-AUNQUE presenta un diseño POCO
-adecuado en cuanto a formato,
-fuentes, integración de imágenes,
-cuadros, esquemas, etc.
-El documento NO está maquetado O
-presenta un diseño INADECUADO en
-cuanto a formato, fuentes, integración
-de imágenes, cuadros, esquemas, etc.
-* Siguiendo enfoque metodologías ágiles…
-7 Especificación de
-requisitos (1,5)
-Se describen claramente los requisitos
-funcionales y no funcionales (en
-relación a interfaces, estándares,
-hardware, seguridad, portabilidad,..) de
-la aplicación.
-Únicamente se describen una parte
-de los requisitos funcionales y/o no
-funcionales de la aplicación.
-NO se describen los requisitos
-funcionales y no funcionales de la
-aplicación o se hace de una forma
-claramente INSUFICIENTE.
-Análisis (1,5)
-Se incluye un diagrama de clases que
-muestra el modelo de negocio de la
-aplicación y el diagrama de casos de
-Se incluye el diagrama de clases y de
-casos de uso únicamente sin incluir
-descripción de los casos de uso o los
-NO se incluye el diagrama de clases o
-de casos de uso o son claramente
-incorrectos.
-uso que corresponde a los requisitos
-funcionales así como la descripción de
-estos casos mediante fichas o
-diagramas de secuencia.
-diagramas de secuencia
-correspondientes
-Diseño (1,5)
-Incluye una descripción de la
-arquitectura del sistema mediante un
-diagrama de componentes, descripción
-de los interfaces y diagrama de
-navegabilidad en relación a la capa de
-presentación, el diagrama de entidad-
-relación en relación a la capa de datos
-y en su caso algún diagrama de
-actividad para describir componentes
-de la capa lógica de la aplicación.
-Solo se incluyen parte de los
-diagramas correspondientes al
-diseño, o son en algunos casos
-incorrectos.
-No se incluyen los diagramas
-correspondientes al diseño, o son
-claramente inadecuados para la
-descripción del diseño de la aplicación.
-Implementación (1,5)
-Se justifican las tecnologías utilizadas
-en el proyecto en relación a las
-distintas capas del modelo
-Se describen los frameworks utilizados
-en el desarrollo en relación a las
-distintas capas.
-Se justifican PARTE de las
-tecnologías y frameworks utilizados
-en el desarrollo del proyecto o no se
-especifica claramente en qué capa
-del modelo se han utilizado
-NO SE especifican las tecnologías y
-frameworks utilizados en el desarrollo
-del proyecto o no se justifica su
-utilización ni se identifica la capa del
-modelo en la que se han utilizado.
-Validación y pruebas (1)
-Se incluyen las validaciones de
-páginas de estilo, navegadores,
-enlaces, resolución, etc necesarias
-para la aplicación y algunas pruebas
-relativas al control de acceso y
-validación de datos de entrada.
-Se incluyen PARTE de las
-validaciones y pruebas requeridas.
-No se incluyen validaciones ni pruebas
-en este apartado.
+6
+Dificultad (1)
+La aplicación/proyecto presenta en
+todas sus fases un grado de dificultad
+acorde a las exigencias de un grado
+superior, trabajando y ampliando
+diferentes aspectos vistos en clase a lo
+largo de los 2 años del ciclo.
+La aplicación/proyecto presenta una
+dificultad aceptable, pero lo hace sólo
+en parte del mismo y no de manera
+genérica. No amplía muchos de los
+aspectos vistos en clase.
+La aplicación/proyecto se ve como una
+práctica/trabajo de los realizados en
+alguna de las clases, sin ampliar ni
+añadir mucho más trabajo al visto en
+cada módulo.
+Grado de resolución de la
+propuesta (1)
+La aplicación/proyecto cumple
+totalmente y se ajusta perfectamente a
+los requerimientos establecidos al
+comienzo del proceso y aporta una
+visión adecuada de lo solicitado.
+La aplicación/proyecta cumple en su
+mayor parte los requerimientos
+establecidos, aunque algunos otros
+no se ajusten en su totalidad a lo
+requerido inicialmente.
+No cumple con los requerimientos
+establecidos inicialmente.
+Originalidad (1)
+Ofrece una visión novedosa y original
+ante el problema planteado en todo su
+conjunto.
+Aporta, de manera aislada, ciertos
+elementos originales; pero el
+proyecto, en su conjunto, no ofrece
+demasiada originalidad.
+No aporta elementos novedosos ni
+originales ante el problema planteado,
+limitándose a ofrecer una solución ya
+existente.
+Actualidad (1)
+La aplicación/proyecto se centra en
+tecnologías/herramientas plenamente
+actuales e incluso emergentes. Aborda
+un problema/necesidad de plena
+actualidad.
+Se usa alguna tecnología/herramienta
+actual, pero de forma aislada o
+simplemente a modo de prueba.
+Aborda un problema/necesidad ya
+conocido, pero aportándole un
+enfoque novedoso y actual.
+No utiliza herramientas/tecnologías
+actuales. No aborda
+problemas/necesidades actuales,
+limitándose a trabajar/investigar temas
+plenamente conocidos.
+Alternativas presentadas (1)
+Presenta diferentes alternativas de
+manera global o a lo largo de
+diferentes fases del proyecto, cuando
+Muestra alguna alternativa de trabajo,
+herramienta, tecnología…; pero de
+manera genérica adopta siempre las
+Se limita a trabajar con un único
+planteamiento, utilizando las
+herramientas y tecnologías vistas en
+le toca enfrentarse a valorar y escoger
+diferentes alternativas de trabajo,
+herramientas, tecnologías…
+decisiones de trabajo conocidas y
+vistas en clase.
+clase, sin analizar otras que puedan
+adecuarse mejor al trabajo en cuestión.
+Resultados obtenidos (1)
+Cumple con solvencia las propuestas
+inicialmente planteadas.
+Plantea, a partir de los resultados
+obtenidos, posibles líneas de trabajo
+futuro.
+Cumple de manera casi genérica las
+propuestas inicialmente planteadas,
+pero deja algunos objetivos
+inicialmente propuestos sin solución.
+No plantea líneas de trabajo futuras a
+partir de los resultados obtenidos.
+No cumple con los resultados previstos
+de manera genérica, dejando muchos
+objetivos inicialmente planteados sin
+solución.
+4
+Contenido específico según
+tipo de proyecto
