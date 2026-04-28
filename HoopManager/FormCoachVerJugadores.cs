@@ -15,16 +15,13 @@ namespace HoopManager
     public partial class FormCoachVerJugadores : Form
     {
         String conectionString = "Server=localhost;Database=gestion_basket;Uid=root;Pwd=;";
+        private int _idJugadroSeleccionado = -1;
         public FormCoachVerJugadores()
         {
             InitializeComponent();
             CargarJugadoresDelEquipo();
         }
         
-        private void botonConsultas_Click(object sender, EventArgs e)
-        {
-            CargarJugadoresDelEquipo();
-        }
 
         private void tablaJugadores_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -37,6 +34,11 @@ namespace HoopManager
                     position.Text = fila.Cells["posicion"].Value.ToString();
                     height.Text = fila.Cells["altura_cm"].Value.ToString();
                     dorsal.Text = fila.Cells["dorsal"].Value.ToString();
+
+                    if (fila.Cells["id"].Value != null)
+                    {
+                        _idJugadroSeleccionado = Convert.ToInt32(fila.Cells["id"].Value);
+                    }
                 }
                 catch
                 {
@@ -49,7 +51,7 @@ namespace HoopManager
 
         private void CargarJugadoresDelEquipo()
         {
-            string query = "SELECT nombre, posicion, altura_cm, dorsal FROM jugadores WHERE id_equipo = @id_equipo";
+            string query = "SELECT id, nombre, posicion, altura_cm, dorsal FROM jugadores WHERE id_equipo = @id_equipo AND activo = TRUE";
             DataTable tablaJug = new DataTable();
 
             try
@@ -67,6 +69,12 @@ namespace HoopManager
                     }
                 }
                 tablaJugadores.DataSource = tablaJug;
+                tablaJugadores.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+
+                if (tablaJug.Columns["id"] != null)
+                {
+                    tablaJugadores.Columns["id"].Visible = false;
+                }
             }
             catch (Exception ex)
             {
@@ -106,6 +114,53 @@ namespace HoopManager
             position.Text = "";
             height.Text = "";
             dorsal.Text = "";
+        }
+
+        private void altoButton1_Click(object sender, EventArgs e)
+        {
+            if (_idJugadroSeleccionado != -1)
+            {
+                Form2 formEntreno = new Form2(_idJugadroSeleccionado);
+                formEntreno.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Por favor, selecciona primero un jugador de la lista.");
+            }
+        }
+
+        private void volver_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void cerrarSeesion_Click(object sender, EventArgs e)
+        {
+            //al darle se cierra la app
+            Application.Exit();
+        }
+
+        private void volver_Click_1(object sender, EventArgs e)
+        {
+            // Al hacer click en volver, volvemos a la pantalla de menu coach
+            coachorm2 menuCoach = new coachorm2();
+            menuCoach.Show();
+            this.Close();
+        }
+
+        private void cerrarSeesion_Click_1(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void FormCoachVerJugadores_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

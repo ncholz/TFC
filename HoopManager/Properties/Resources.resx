@@ -118,13 +118,49 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Descargar flecha direccional roja sobre fondo transparente gratis" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Descargar flecha direccional roja sobre fondo transparente gratis.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NBA" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NBA.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="foto_canasta" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\foto_canasta.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="descarga" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\descarga.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ac65c85f139e7ae08b95caecf6d0cc36-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ac65c85f139e7ae08b95caecf6d0cc36-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fotofondo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fotofondo1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BASKETBALL COURT AS FLOOR" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BASKETBALL COURT AS FLOOR.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="salir" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\salir.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pizarra" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pizarra.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fotofondo2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fotofondo2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Gemini_Generated_Image_gv7m3fgv7m3fgv7m" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Gemini_Generated_Image_gv7m3fgv7m3fgv7m.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Free Login Logout Black Icon Png Image With Transparent Background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Free Login Logout Black Icon Png Image With Transparent Background.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="What are the different types of audit reports in India_ - IMS Proschool" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\What are the different types of audit reports in India_ - IMS Proschool.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="logo_HoopManager_SinFondo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logo_HoopManager_SinFondo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Gemini_Generated_Image_gv7m3fgv7m3fgv7m" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Gemini_Generated_Image_gv7m3fgv7m3fgv7m.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Switch On Off Button Icon, Technical, Symbol, Background PNG and Vector with Transparent Background for Free Download" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Switch On Off Button Icon, Technical, Symbol, Background PNG and Vector with Transparent Background for Free Download.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

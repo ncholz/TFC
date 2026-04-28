@@ -13,8 +13,10 @@ namespace HoopManager
         public login()
         {
             InitializeComponent();
-            RedondearEsquinas(altoButton1, 50, true, false, false, true);
-            RedondearEsquinas(cajaContenido, 50, true, true, true, true);
+            this.FormBorderStyle = FormBorderStyle.None;
+            //RedondearEsquinas(altoButton1, 50, true, false, false, true);
+            //RedondearEsquinas(cajaContenido, 50, true, true, true, true);
+            //RedondearEsquinas(cerrarSeesion, 20, true, true, true, true);
 
         }
 
@@ -43,19 +45,55 @@ namespace HoopManager
 
         }
 
+        
         private void user_TextChanged(object sender, EventArgs e)
-        { 
+        {
+        }
+
+        private void user_enter(object sender, EventArgs e)
+        {
+            if (user.Text == "Usuario")
+            {
+                user.Text = "";
+            }
             
+        }
+
+        private void user_leave(object sender, EventArgs e)
+        {
+            if (user.Text == "")
+            {
+                user.Text = "Usuario";
+            }
         }
 
         private void password_TextChanged(object sender, EventArgs e)
         {
+            if (password.Text != "Contraseña" && password.Text != "")
+            {
+                password.PasswordChar = '*';
+            }
+        }
 
+        private void password_Enter(object sender, EventArgs e)
+        {
+            if (password.Text == "Contraseña")
+            {
+                password.Text = "";
+            }
+        }
+
+        private void password_Leave(object sender, EventArgs e)
+        {
+            if (password.Text == "")
+            {
+                password.Text = "Contraseña";
+                password.PasswordChar = '\0'; 
+            }
         }
 
         private void botonLogin_Click(object sender, EventArgs e)
         {
-
             String username = user.Text;
             String passwordText = password.Text;
             String role = "";
@@ -70,6 +108,7 @@ namespace HoopManager
                     {
                         command.Parameters.AddWithValue("@username", username);
                         command.Parameters.AddWithValue("@password", passwordText);
+
                         using (MySqlDataReader reader = command.ExecuteReader())
                         {
                             if (reader.HasRows)
@@ -77,39 +116,43 @@ namespace HoopManager
                                 if (reader.Read())
                                 {
                                     role = reader["rol"].ToString();
-                                    if (reader["rol"] != DBNull.Value)
+                                    if (reader["id_equipo"] != DBNull.Value)
                                     {
                                         SesionUsuario.IdEquipoEntrenador = Convert.ToInt32(reader["id_equipo"]);
                                     }
                                 }
-                            // Credenciales válidas
+
+                                this.Hide();
+
+                                using (Form7 pantallaCarga = new Form7())
+                                {
+                                    pantallaCarga.ShowDialog();
+                                }
+
                                 if (role.Equals("entrenador"))
                                 {
-                                    coachorm2 coachForm = new coachorm2();
-                                    coachForm.Show();
-                                    this.Hide();
+                                    int idEquipo = SesionUsuario.IdEquipoEntrenador;
+                                 
+                                    megamenucoach menucoach= new megamenucoach(idEquipo);
+                                    menucoach.Show();
                                 }
-                                else 
+                                else
                                 {
-                                    Form adminForm = new Form();
+                                    Form8 adminForm = new Form8();
                                     adminForm.Show();
-                                    this.Hide();
                                 }
-                                MessageBox.Show("Inicio de sesión exitoso");
                             }
                             else
-                            { // Credenciales inválidas
+                            {
                                 MessageBox.Show("Usuario o contraseña incorrectos");
                             }
                         }
                     }
-
                 }
                 catch (Exception ex)
                 {
                     MessageBox.Show("Error al conectar a la base de datos: " + ex.Message);
                 }
-
             }
         }
 
@@ -134,6 +177,35 @@ namespace HoopManager
             control.Region = new Region(path);
         }
 
-        
+        private void cerrarSeesion_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void altoButton1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click_2(object sender, EventArgs e)
+        {
+
+        }
+
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (password.Text != "Contraseña")
+            {
+                if (password.PasswordChar == '*')
+                {
+                    password.PasswordChar = '\0'; 
+                }
+                else
+                {
+                    password.PasswordChar = '*'; 
+                }
+            }
+        }
     }
 }

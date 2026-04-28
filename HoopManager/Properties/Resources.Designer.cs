@@ -63,9 +63,79 @@ namespace HoopManager.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ac65c85f139e7ae08b95caecf6d0cc36_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("ac65c85f139e7ae08b95caecf6d0cc36-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BASKETBALL_COURT_AS_FLOOR {
+            get {
+                object obj = ResourceManager.GetObject("BASKETBALL COURT AS FLOOR", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap descarga {
+            get {
+                object obj = ResourceManager.GetObject("descarga", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Descargar_flecha_direccional_roja_sobre_fondo_transparente_gratis {
+            get {
+                object obj = ResourceManager.GetObject("Descargar flecha direccional roja sobre fondo transparente gratis", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap foto_canasta {
             get {
                 object obj = ResourceManager.GetObject("foto_canasta", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fotofondo1 {
+            get {
+                object obj = ResourceManager.GetObject("fotofondo1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fotofondo2 {
+            get {
+                object obj = ResourceManager.GetObject("fotofondo2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Free_Login_Logout_Black_Icon_Png_Image_With_Transparent_Background {
+            get {
+                object obj = ResourceManager.GetObject("Free Login Logout Black Icon Png Image With Transparent Background", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -86,6 +156,57 @@ namespace HoopManager.Properties {
         internal static System.Drawing.Bitmap logo_HoopManager_SinFondo {
             get {
                 object obj = ResourceManager.GetObject("logo_HoopManager_SinFondo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap NBA {
+            get {
+                object obj = ResourceManager.GetObject("NBA", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pizarra {
+            get {
+                object obj = ResourceManager.GetObject("pizarra", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap salir {
+            get {
+                object obj = ResourceManager.GetObject("salir", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Switch_On_Off_Button_Icon__Technical__Symbol__Background_PNG_and_Vector_with_Transparent_Background_for_Free_Download {
+            get {
+                object obj = ResourceManager.GetObject("Switch On Off Button Icon, Technical, Symbol, Background PNG and Vector with Tran" +
+                        "sparent Background for Free Download", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap What_are_the_different_types_of_audit_reports_in_India____IMS_Proschool {
+            get {
+                object obj = ResourceManager.GetObject("What are the different types of audit reports in India_ - IMS Proschool", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
