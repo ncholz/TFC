@@ -1,139 +1,66 @@
-1
-Módulo profesional de Proyecto de los ciclos formativos de Grado
-Medio y Superior de Formación Profesional
-Resolución 18/2025, de 4 de julio
-, de la Dirección General de Formación Profesional, por la que se
-dictan instrucciones que regulan el desarrollo del Proyecto Intermodular de los Ciclos Formativos de
-Formación Profesional Básico, Medio y Superior, en la Comunidad Autónoma de La Rioja, durante
-el curso 2025-2026
-Criterios de calificación del módulo del proyecto
-La valoración del proyecto se hará tanto por parte del tutor individual asignado como por un tribunal formado por tres
-profesores del equipo docente del ciclo formativo.
-La nota final se calculará mediante la siguiente ponderación:
-●
-Nota del tutor individual→ 31 %
-●
-Nota del tribunal → 69%
-La valoración del proyecto por parte del TRIBUNAL tiene en cuenta los siguientes apartados:
-a.Características formales 🡪 20%
-b. Contenidos 🡪 50%
-c. Exposición y defensa del proyecto 🡪 30%
-La valoración del proyecto por parte del TUTOR INDIVIDUAL tiene en cuenta los siguientes apartados:
-a. Características formales 🡪 20%
-b. Contenidos 🡪 50%
-d. Tareas realizadas a lo largo de la elaboración del proyecto 🡪 30%
-A continuación se detalla cada uno de los apartados a valorar en el proyecto.
-a.- Características formales
-Se entregará un documento que contendrá al menos los siguientes apartados:
-● Portada
-● Índice
-● Introducción
-● Objetivos
-● Fases del proyecto (metodologías ágiles si es oportuno)
-o Diseño (descripción componentes hardware y/o software, esquema funcional)
-o Implementación y configuración
-o Pruebas
-● Ampliación y posibles mejoras
-● Conclusión
-● Bibliografía
+# INSTRUCCIONES Y CRITERIOS DE CALIFICACIÓN
+## Módulo de Proyecto Intermodular
 
-2
-Aspectos formales:
--
-Tipo de letra – Calibri 12 o similar
--
-Espaciado sencillo
--
-Doble cara
--
-Color
--
-Extensión: entre 25 y 40 páginas (extraordinariamente, se pueden incluir anexos)
--
-Numeración de páginas
-En este apartado se valorará la adecuación respecto a la presentación, extensión, formato, estructura documental,
-organización, redacción, y demás elementos relacionados con la calidad técnica del documento.
-b.- Contenido
-El desarrollo del contenido debe ser supervisado por el tutor individual asignado. El proyecto completo debe
-ser entregado al tutor individual. La fecha exacta de entrega será publicada con suficiente antelación.
-En este apartado se valorará el grado de dificultad, nivel de resolución de la propuesta planteada, originalidad,
-actualidad, viabilidad, alternativas consideradas y resultados obtenidos.
-c.- Exposición y defensa
-El Departamento fijará las fechas y horarios para la exposición de los proyectos. Cada alumno dispondrá de un máximo
-de 15 minutos para la exposición y 5 minutos para contestar preguntas del tribunal.
-En este apartado se valorará la adecuación al tiempo mínimo y máximo establecido, los recursos a utilizar, la valoración
-de la calidad, claridad y coherencia en la exposición oral, así como en las respuestas a las preguntas planteadas por
-los miembros del tribunal.
-d.- Tareas realizadas a lo largo de la elaboración del proyecto:
-En este apartado se valorará la asistencia a las tutorías, realización de las modificaciones requeridas, aportación de
-ideas, registros de trabajo y otras que considere.
+[cite_start]La nota final se calculará mediante la siguiente ponderación[cite: 273]:
+* **Nota del tutor individual:** 31%
+* **Nota del tribunal:** 69%
 
-3
-RECOMENDACIONES:
-PARA LA ELABORACIÓN DE LA MEMORIA:
-✔ Redactar los contenidos de forma clara y concreta.
-✔ Exponer las ideas teniendo en cuenta que las personas que lean la memoria del proyecto no han participado en el
-diseño del mismo. Por ello será necesario explicar los contenidos para alguien que desconoce el proyecto.
-✔ Redactar frases y párrafos cortos, esto evita “perderse” a la hora de exponer una idea.
-✔ Evitar cometer faltas de ortografía y gramaticales.
-✔ Antes de la entrega de la memoria, volver a leerla para asegurarse de que se cumplen las recomendaciones
-anteriores. Puede facilitar esta revisión final el que alguna persona ajena al equipo de proyecto realice una lectura de
-la memoria y dé su opinión.
-PREPARACIÓN DE LA EXPOSICIÓN
-Previo a realizar la exposición es importante realizar una preparación de la misma. Para ello se deberán tener en cuenta
-varios aspectos:
-a) Preparación y organización de los contenidos de la exposición. Es importante tener en cuenta que durante la
-exposición se presenta una síntesis con los aspectos principales del proyecto y no el proyecto tal y como aparece en
-la memoria.
-b) Si la exposición se va a realizar en grupo, repartir las partes que va a exponer cada uno.
-c) Ensayar la exposición tal y como vayamos a realizarla, empleando también los medios técnicos que vamos a utilizar.
-De esta forma, podemos corregir posibles errores y evitar problemas durante la exposición. Este ensayo también nos
-servirá para controlar los tiempos, ya que el tiempo de exposición suele ser limitado.
-d) Preparación del material que se utilizará durante la exposición. Podría incluir:
-✔ Presentación usando una aplicación del tipo PowerPoint o Prezi. Si se utiliza este soporte, evitar diseñar
-pantallas demasiado cargadas de letra y con letra demasiado pequeña. Puede facilitar el seguimiento de la exposición
-la inclusión de imágenes, fotos y animaciones (se recomienda prudencia en este último aspecto). El uso de fondos
-oscuros o poco contraste puede dificultar la visibilidad cuando se proyecta mediante un cañón.
-✔ Esquemas-guión para desarrollar la exposición. Este esquema puede entregarse al profesor/es
-evaluador/es para facilitarles el seguimiento de la exposición, además de utilizarlo las personas que exponen.
-✔ Maquetas, piezas, productos elaborados que sirvan como modelo de lo que se va a elaborar con la
-ejecución del proyecto.
-e) Conseguir, reservar, probar los aparatos electrónicos y otros recursos que vayamos a utilizar durante la exposición:
-DVD, cañón de video, ordenador portátil, proyector de transparencias, pizarra digital, papelógrafo, etc.
-ASPECTOS FORMALES DE LA EXPOSICIÓN
-Exposición:
-Llegado el momento de la exposición también hay una serie de consejos que pueden facilitar el desarrollo de la misma
-y causar mejor sensación en el equipo de personas evaluadoras:
-1. Cuidar la expresión verbal:
-o Hablar claro, alto y a buen ritmo, pero sin acelerarse.
-o Utilizar un tono de voz variable, para dar énfasis a algunas ideas o comentarios.
-2. Cuidar la expresión no verbal:
-o Mantener una conexión visual con las personas que están escuchando la exposición.
+### 1. Valoración del TRIBUNAL (69% del total)
+El tribunal evalúa los siguientes apartados:
+* **a. [cite_start]Características formales:** 20% [cite: 284]
+* **b. [cite_start]Contenidos:** 50% [cite: 285]
+* **c. [cite_start]Exposición y defensa del proyecto:** 30% [cite: 286]
 
-4
-o Si en algún momento de la exposición es necesario leer algún texto, levantar de vez en cuando la mirada.
-3. Exponer las ideas de forma organizada, teniendo en cuenta el guión elaborado para la exposición.
-4. Intentar hacer una presentación amena, que atraiga el interés de las personas evaluadoras. Mostrar entusiasmo por
-el proyecto puede ayudar a motivar a quien escucha la exposición.
-5. Elegir el vestuario adecuado para ese día, con el que se pueda estar cómodo y se pueda transmitir la imagen que
-deseamos que acompañe al proyecto.
-6. No meterse las manos en los bolsillos, ni apoyarse o sentarse sobre la mesa, ya que la imagen que se da no es
-adecuada.
-7. No sentarse para realizar la exposición, ya que esto hará que sea menos dinámica y atraiga menos la atención de
-quien evalúa.
-8. Es conveniente llevar fichas con esquemas de contenidos del proyecto y la memoria del proyecto y tener el material
-organizado; si debido a los nervios propios de la exposición es necesario recurrir a este material, será más fácil
-encontrar lo que se busca.
-9. Se pueden utilizar los últimos minutos de la exposición para exponer argumentos de defensa de la viabilidad del
-proyecto presentado.
-Defensa:
-Finalmente, será el momento de responder a posibles preguntas que planteen las personas evaluadoras.
-1. Argumentar adecuadamente las respuestas, haciendo referencia a los contenidos de la memoria del proyecto.
-2. Cada pregunta que realice el equipo evaluador, deberá ser para quien defiende el proyecto una invitación para
-ampliar la información recogida en la memoria, demostrando así el grado de conocimiento y madurez del
-proyecto elaborado.
-3. Se debe intentar responder de memoria a las preguntas que formule el tribunal, ya que ello da impresión de
-dominio del proyecto.
-4. Si se tiene alguna duda sobre las preguntas, no se han entendido bien, etc. es preferible decirle al tribunal que
-las repita o reformule de otra manera. No hay que quedarse callado ni tampoco responder con algo que no
-tenga nada que ver.
+### 2. Valoración del TUTOR INDIVIDUAL (31% del total)
+El tutor individual tiene en cuenta:
+* **a. [cite_start]Características formales:** 20% [cite: 284]
+* **b. [cite_start]Contenidos:** 50% [cite: 285]
+* **d. [cite_start]Tareas realizadas a lo largo de la elaboración:** 30% [cite: 288]
+
+---
+
+### Detalle de los apartados a valorar
+
+#### [cite_start]a.- Características formales [cite: 284]
+Se entregará un documento que contendrá al menos: Portada, Índice, Introducción, Objetivos, Fases del proyecto (metodologías ágiles si es oportuno), Ampliación y posibles mejoras, Conclusión y Bibliografía.
+*Fases del proyecto:* Diseño (descripción de componentes hardware/software, esquema funcional), Implementación y configuración, Pruebas.
+
+**Aspectos formales exigidos:**
+* **Tipo de letra:** Calibri 12 o similar (como el tema visual de tu proyecto usa la familia Syne, encaja perfecto como fuente "similar" para mantener tu identidad de marca en la memoria).
+* **Espaciado:** Sencillo.
+* **Impresión:** Doble cara, a color.
+* **Extensión:** Entre 25 y 40 páginas (extraordinariamente, se pueden incluir anexos).
+* **Numeración:** Páginas numeradas.
+[cite_start]*(Se valorará la presentación, extensión, formato, estructura documental, organización y redacción [cite: 284]).*
+
+#### [cite_start]b.- Contenido [cite: 285]
+El desarrollo debe ser supervisado y entregado al tutor individual. 
+[cite_start]*(Se valorará el grado de dificultad, nivel de resolución de la propuesta, originalidad, actualidad, viabilidad, alternativas consideradas y resultados obtenidos [cite: 285]).*
+
+#### [cite_start]c.- Exposición y defensa [cite: 286]
+* **Tiempos:** Máximo de 15 minutos para la exposición y 5 minutos para contestar preguntas.
+[cite_start]*(Se valorará la adecuación al tiempo, los recursos utilizados, la claridad y coherencia en la exposición oral, así como la calidad en las respuestas a las preguntas planteadas por el tribunal [cite: 286]).*
+
+#### [cite_start]d.- Tareas realizadas [cite: 288]
+[cite_start]*(Se valorará la asistencia a las tutorías, la realización de las modificaciones requeridas, la aportación de ideas y los registros de trabajo [cite: 288]).*
+
+---
+
+### RECOMENDACIONES CLAVE
+
+**Para la elaboración de la Memoria:**
+* **Claridad:** Redactar de forma clara, concreta y con frases cortas para no perder el hilo.
+* **Empatía con el lector:** Exponer las ideas teniendo en cuenta que quien lee no ha diseñado el proyecto.
+* **Revisión:** Evitar faltas de ortografía. Pedir a una persona externa que lea la memoria antes de entregarla.
+
+**Para la preparación de la Exposición:**
+* **Síntesis:** Presentar los aspectos principales, no el proyecto completo tal y como aparece en la memoria.
+* **Ensayos:** Practicar con los medios técnicos reales para corregir errores y clavar los tiempos.
+* **Soporte visual:** No sobrecargar las diapositivas de texto. Usar imágenes y buen contraste (evitar fondos muy oscuros si se usa proyector).
+* **Material de apoyo:** Preparar un esquema/guion para ti y entregar una copia al tribunal para facilitarles el seguimiento.
+
+**Aspectos formales durante la Defensa:**
+* **Lenguaje corporal:** Hablar claro, a buen ritmo y mantener contacto visual constante. ¡No te sientes para exponer ni te metas las manos en los bolsillos!
+* **Actitud:** Mostrar entusiasmo atrae el interés de quienes te evalúan.
+* **Las preguntas son tus aliadas:** Usa las preguntas del tribunal como una invitación para ampliar información y demostrar tu dominio. Intenta responder de memoria.
+* **Dudas:** Si no entiendes una pregunta, pide amablemente que te la reformulen. Nunca te quedes callado ni respondas algo que no tiene nada que ver.
